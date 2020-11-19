@@ -1,0 +1,51 @@
+<?php
+
+return [
+    'singular' => 'Currency',
+    'plural' => 'Currencies',
+    'empty' => 'There are no currencies yet.',
+    'count' => 'Currencies count',
+    'search' => 'Search',
+    'select' => 'Select Currency',
+    'perPage' => 'Currencies Per Page',
+    'filter' => 'Search for currency',
+    'filter-rate' => 'Filter By Day',
+    'actions' => [
+        'list' => 'List all',
+        'rates' => 'Currency Rates',
+        'add-rates' => 'Add Currency Rates For Today',
+        'create' => 'Create Currency',
+        'show' => 'Show Currency',
+        'edit' => 'Edit Currency',
+        'delete' => 'Delete Currency',
+        'options' => 'Options',
+        'save' => 'Save',
+        'filter' => 'Filter',
+    ],
+    'messages' => [
+        'created' => 'The currency has been created successfully.',
+        'rate-created' => 'The currency rate has been created successfully.',
+        'updated' => 'The currency has been updated successfully.',
+        'rate-updated' => 'The currency rate has been updated successfully.',
+        'deleted' => 'The currency has been deleted successfully.',
+    ],
+    'attributes' => [
+        '%name%' => 'Currency Name',
+        'name' => 'Currency Name',
+        '%symbol%' => 'Symbol',
+        'symbol' => 'Symbol',
+        'code' => 'Currency Code',
+        'day' => 'Day',
+        'rate' => 'Rate',
+        'rate-of' => 'Rate Of :currency',
+        'is_default' => 'Is Default',
+    ],
+    'dialogs' => [
+        'delete' => [
+            'title' => 'Warning !',
+            'info' => 'Are you sure you want to delete the currency ?',
+            'confirm' => 'Delete',
+            'cancel' => 'Cancel',
+        ],
+    ],
+];

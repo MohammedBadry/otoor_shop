@@ -1,0 +1,92 @@
+.login-content .login-box {
+  min-height: 400px;
+}
+
+.app-sidebar__user-avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.img-size-32 {
+  width: 32px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.index-flag {
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.bootstrap-tagsinput .badge {
+  margin: 2px;
+}
+
+.slider {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .preview {
+    border: 1px solid #cdcdcd;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    width: 100%;
+
+    img {
+      max-height: 300px;
+      max-width: 100%;
+      display: inline-block;
+    }
+  }
+
+  .items {
+    margin: 10px 0 0;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 70px;
+    display: flex;
+    width: 100%;
+
+    li {
+      list-style: none;
+      width: 60px;
+      border: 1px solid #cdcdcd;
+      background: #fff;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+
+      &:hover, &.active {
+        background: #ededed;
+
+        img {
+          opacity: 1;
+        }
+      }
+
+      img {
+        height: 53px;
+        width: 58px;
+        padding: 5px;
+        opacity: .5;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: #cdcdcd;
+    }
+
+  }
+}

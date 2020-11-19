@@ -1,0 +1,37 @@
+body {
+    direction: ltr !important;
+    text-align: left !important;
+}
+.dropdown-item {
+    text-align: left;
+}
+.select__form {
+    left: 0;
+    right: auto;
+}
+.btn__search {
+    right: 0;
+    left: auto;
+}
+.header__logo {
+    margin-right: 4rem;
+}
+a,
+.btn {
+    direction: rtl;
+}
+.social__icons {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+.products__box {
+    direction: ltr;
+}
+.footer .dot {
+    margin-left: 0 !important;
+    margin-right: 20px;
+}
+.cart__inner--box .img img {
+    margin-right: 20px;
+    margin-left: 0;
+}

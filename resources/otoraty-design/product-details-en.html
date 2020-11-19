@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ***** TITLE FAVICON ***** -->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!-- ***** FONTAWESOME LIBRARY FOR ICON FONTS. ***** -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- ------------- ***** SLICK SLIDER ******** -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/easyzoom.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- ***** INCLUDE BOOTSTRAP CDN  ***** -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- ***** Montserrat FONT PUBLIC ***** -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- INCLUDE MAIN STYLE SHEET *****-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl-style.css">
+    <link rel="stylesheet" href="css/direction-en.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>E-Commerce---store</title>
+</head>
+
+<body>
+
+    <!-- ******* HEADER ******** -->
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="top-header__inner d-flex justify-content-center">
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <div class="dropdown">
+                                    <button
+                                        class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                        type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        KW <span><img src="img/flag-kw.png" width="30px" alt=""></span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Emirates</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mx-4">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                        type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-globe"></i></span> English
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="index.html">Arabic</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button
+                                        class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                        type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-dollar-sign"></i></span> Dinar KW
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Other</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ********* HEADER CENTERED ********* -->
+    <header class="header__centered py-5 px-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="header__centered--wrapper d-flex justify-content-start align-items-center">
+                        <div class="logo">
+                            <a href="index-en.html" class="header__logo">Logo</a>
+                        </div>
+                        <form action="#" class="form__search">
+                            <div class="form-group">
+                                <input type="search" class="form-control input__search" placeholder="بحث">
+                                <select class="form-control select__form" id="exampleFormControlSelect1">
+                                    <option>Category <span><i class="fas fa-angle-down"></i></span></option>
+                                    <option>Category-1</option>
+                                    <option>category-2</option>
+                                    <option>category-3</option>
+                                    <option>category-4</option>
+                                </select>
+                                <button class="btn btn__search" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                        <a class="btn btn__login" data-toggle="modal" data-target="#loginForm">Login Or Register</a>
+                        <a href="cart.html" class="btn btn-transparent">Cart <span><i
+                                    class="fas fa-cart-plus"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Modal LOGIN-->
+    <div class="modal modal__login fade" id="loginForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="form__login">
+                        <div class="form-group mb-4">
+                            <label for="email" class="mb-3">E-Mail<span class="text-danger">*</span></label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="password" class="mb-3"> Password <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form__login--bottom mb-4 d-flex justify-content-between align-items-center">
+                            <button class="btn btn__modal--submit">Login</button>
+                            <a href="#">Forget Password</a>
+                        </div>
+                        <div class="form__login--footer text-center">
+                            <a href="index.html">Continue by User</a>
+                            <span>or</span>
+                            <a href="register-en.html">Create New Account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-align-justify"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="category-en.html">Arabian perfumes<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category-en.html">French perfumes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category-en.html">Tester service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category-en.html">Brands</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled social__icons d-flex mr-auto">
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="mx-4"><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-snapchat-ghost"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ******** PRODUCT DETAILS ********* -->
+    <section class="product-details" data-aos="fade-up" data-aos-offset="200">
+        <div class="container-fluid">
+            <div class="section__top-header d-flex mb-3">
+                <p class="d-inline-block"><span class="mx-3"><i class="fas fa-arrow-right"></i></span> Arabian perfumes</p>
+                <p class="d-inline-block"><span class="mx-3"><i class="fas fa-arrow-right"></i></span> Spectrum Emirates</p>
+                <p class="d-inline-block"><span class="mx-3"><i class="fas fa-arrow-right"></i></span> this text is</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="product__carousel">
+                        <!-- Swiper and EasyZoom plugins start -->
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide easyzoom easyzoom--overlay">
+                                    <a href="img/product.png">
+                                        <img src="img/product.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide easyzoom easyzoom--overlay">
+                                    <a href="img/product.png">
+                                        <img src="img/product.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide easyzoom easyzoom--overlay">
+                                    <a href="img/product.png">
+                                        <img src="img/product.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide easyzoom easyzoom--overlay">
+                                    <a href="img/product.png">
+                                        <img src="img/product.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide easyzoom easyzoom--overlay">
+                                    <a href="img/product.png">
+                                        <img src="img/product.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
+                        </div>
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/product.png " alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/product.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/product.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/product.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/product.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper and EasyZoom plugins end -->
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="product-details--box pl-5">
+                        <div class="product__details--top d-flex align-items-start mb-4">
+                            <div class="product-details-right">
+                                <p><span><i class="fas fa-arrow-right"></i></span> this text is</p>
+                                <div class="stars d-flex">
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="price text-left mb-4">7.000 KD</div>
+                        <ul class="list-unstyled d-flex justify-content-between align-items-center mb-4 w-100">
+                            <li>The company: Dar Al Khalil</li>
+                            <li>Availability status: exists</li>
+                            <li>Type: ot203</li>
+                        </ul>
+                        <h4 class="mb-4">Product details</h4>
+                        <p class="mb-4">This text is an example of text that can be replaced in the same space. This
+                            text was generated from a generator
+                            Arabic text, where you can generate this text or many other texts in addition to increasing
+                            the number
+                            The letters to be generated by the application.</p>
+                        <div class="product__box--bottom d-flex justify-content-between align-items-center mb-4">
+                            <form action="#" class="form__details d-flex justify-content-between w-100 align-items-end">
+                                <div class="form-group w-50">
+                                    <label for="exampleFormControlSelect1">Capacitance</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div id="field1" class="counter__product">
+                                    <button type="button" id="sub" class="sub btn">-</button>
+                                    <input type="number" id="1" value="1" min="1" max="3" />
+                                    <button type="button" id="add" class="add btn">+</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product__details--buttons d-flex justify-content-between align-items-center">
+                            <button class="btn btn__cart">Add To Cart<span><i
+                                        class="fas fa-cart-plus"></i></span></button>
+                            <button class="btn btn__buy btn__cart">Buy Now<span><i
+                                        class="fas fa-shopping-bag"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container-fluid">
+            <div class="section__header text-center mb-5">
+                <h3>Distinctive varieties of the same department</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="owl-product owl-carousel owl-theme">
+                        <div class="products__box">
+                            <div class="img">
+                                <img src="img/p-1.png" alt="">
+                            </div>
+                            <div class="product__box--details">
+                                <a href="">This text is</a>
+                                <h4 class="product__price">18.000 KD</h4>
+                            </div>
+                            <div class="product__box--bottom d-flex justify-content-between">
+                                <div id="field1" class="counter__product">
+                                    <button type="button" id="sub" class="sub btn">-</button>
+                                    <input type="number" id="1" value="1" min="1" max="3" />
+                                    <button type="button" id="add" class="add btn">+</button>
+                                </div>
+                                <button class="btn btn__cart">Add To Cart<i class="fas fa-cart-plus"></i></button>
+                            </div>
+                            <div class="product__box--top d-flex justify-content-between align-items-center">
+                                <div class="stars d-flex">
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <button class="btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container-fluid">
+            <div class="section__header text-center mb-5">
+                <h3>Distinctive varieties of the same brand</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="owl-product owl-carousel owl-theme">
+                        <div class="products__box">
+                            <div class="img">
+                                <img src="img/p-1.png" alt="">
+                            </div>
+                            <div class="product__box--details">
+                                <a href="">This text is</a>
+                                <h4 class="product__price">18.000 KD</h4>
+                            </div>
+                            <div class="product__box--bottom d-flex justify-content-between">
+                                <div id="field1" class="counter__product">
+                                    <button type="button" id="sub" class="sub btn">-</button>
+                                    <input type="number" id="1" value="1" min="1" max="3" />
+                                    <button type="button" id="add" class="add btn">+</button>
+                                </div>
+                                <button class="btn btn__cart">Add To Cart<i class="fas fa-cart-plus"></i></button>
+                            </div>
+                            <div class="product__box--top d-flex justify-content-between align-items-center">
+                                <div class="stars d-flex">
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <button class="btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 m-auto">
+                    <div class="footer__inner">
+                        <h4 class="footer__heading mb-4">Services</h4>
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="#">Replacement and recall</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="#">Delivery Service</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="#">Terms and Conditions</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 m-auto">
+                    <div class="footer__inner">
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">common questions</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">Help</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 m-auto">
+                    <div class="footer__inner">
+                        <h4 class="footer__heading mb-4">Follow us on</h4>
+                        <ul class="list-unstyled social__icons d-flex mr-auto">
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li class="mx-4"><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-snapchat-ghost"></i></a></li>
+                        </ul>
+                        <h4 class="footer__heading mb-4">Hurry up and download an app</h4>
+                        <div class="footer__apps">
+                            <img src="img/apps.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <p>My perfumes all rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ================== *INCLUDE JAVASCRIPT FILES*. =================== -->
+
+    <!-- ***** INCLUDE JQUERY LIBRARY ***** -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- ***** INCLUDE POPPER FOR DYNAMICALLY POSITIONS IN BOOTSTRAP ***** -->
+    <script src="js/popper.min.js"></script>
+    <!-- ***** INCLUDE BOOTSTRAP FRAMEWORK ***** -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/easyzoom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+    <!-- **** INCLUDE MAIN FILE.JS ***** -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

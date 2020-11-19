@@ -1,0 +1,48 @@
+<x-layout :title="trans('{{lowercasePlural}}.plural')" :breadcrumbs="['dashboard.{{lowercasePlural}}.index']">
+    @include('dashboard.{{lowercasePlural}}.partials.filter')
+
+    @component('dashboard::components.table-box')
+        @slot('title', trans('{{lowercasePlural}}.actions.list'))
+        @slot('tools')
+            @include('dashboard.{{lowercasePlural}}.partials.actions.create')
+        @endslot
+
+        <thead>
+        <tr>
+            <th>@lang('{{lowercasePlural}}.attributes.name')</th>
+            <th style="width: 160px">...</th>
+        </tr>
+        </thead>
+        <tbody>
+        @forelse(${{lowercasePlural}} as ${{lowercaseSingular}})
+            <tr>
+                <td>
+                    <a href="{{ route('dashboard.{{lowercasePlural}}.show', ${{lowercaseSingular}}) }}"
+                       class="text-decoration-none text-ellipsis">
+
+                        <img src="{{ ${{lowercaseSingular}}->getFirstMediaUrl() }}"
+                             alt="Product 1"
+                             class="img-circle img-size-32 mr-2" style="height: 32px;">
+                        {{ ${{lowercaseSingular}}->name }}
+                    </a>
+                </td>
+
+                <td style="width: 160px">
+                    @include('dashboard.{{lowercasePlural}}.partials.actions.show')
+                    @include('dashboard.{{lowercasePlural}}.partials.actions.edit')
+                    @include('dashboard.{{lowercasePlural}}.partials.actions.delete')
+                </td>
+            </tr>
+        @empty
+            <tr>
+                <td colspan="100" class="text-center">@lang('{{lowercasePlural}}.empty')</td>
+            </tr>
+        @endforelse
+
+        @if(${{lowercasePlural}}->hasPages())
+            @slot('footer')
+                {{ ${{lowercasePlural}}->links() }}
+            @endslot
+        @endif
+    @endcomponent
+</x-layout>

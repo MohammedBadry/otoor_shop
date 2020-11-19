@@ -1,0 +1,87 @@
+/* 
+    ***************  You can read some details about the project through this file *************
+                            ************ File: package.json ************* 
+*/
+
+:root {
+    --flat-dark: #222f3e
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering:optimizeLegibility;
+    line-height: 1.5;   
+    font-family: 'Montserrat', sans-serif;
+    direction: ltr;
+    text-align: left;
+    color: #222f3e;
+    font-weight: 400;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+.notice img {
+    width: 100%;
+}
+
+a,
+.nav-link {
+    color: var(--flat-dark);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+section {
+    padding: 6rem 0;
+    overflow: hidden;
+}
+

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ***** TITLE FAVICON ***** -->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!-- ***** FONTAWESOME LIBRARY FOR ICON FONTS. ***** -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ------------- ***** SLICK SLIDER ******** -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/easyzoom.css">
+
+    <!-- ***** INCLUDE BOOTSTRAP CDN  ***** -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- ***** Montserrat FONT PUBLIC ***** -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/range.css">
+
+    <!-- INCLUDE MAIN STYLE SHEET *****-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl-style.css">
+
+    <title>E-Commerce---store</title>
+</head>
+
+<body>
+
+    <!-- ******* HEADER ******** -->
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="top-header__inner d-flex justify-content-center">
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <div class="dropdown">
+                                    <button
+                                        class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                        type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        KW <span><img src="img/flag-kw.png" width="30px" alt=""></span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">الامارات</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mx-4">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                        type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-globe"></i></span> عربى
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="index-en.html">اللغة الانجليزية</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button
+                                        class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                        type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-dollar-sign"></i></span> دينار كويتى
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">عملة اخرى</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ********* HEADER CENTERED ********* -->
+    <header class="header__centered py-5 px-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="header__centered--wrapper d-flex justify-content-start align-items-center">
+                        <div class="logo">
+                            <a href="index.html" class="header__logo">لــوجــو</a>
+                        </div>
+                        <form action="#" class="form__search">
+                            <div class="form-group">
+                                <input type="search" class="form-control input__search" placeholder="بحث">
+                                <select class="form-control select__form" id="exampleFormControlSelect1">
+                                    <option>الأقســــام <span><i class="fas fa-angle-down"></i></span></option>
+                                    <option>القسم الأول</option>
+                                    <option>القسم الثانى</option>
+                                    <option>القسم الثالث</option>
+                                    <option>القسم الرابع</option>
+                                </select>
+                                <button class="btn btn__search" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                        <a class="btn btn__login" data-toggle="modal" data-target="#loginForm">تسجيل الدخول أو
+                            الاشتراك</a>
+                        <a href="cart.html" class="btn btn-transparent">عربتى <span><i
+                                    class="fas fa-cart-plus"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal LOGIN-->
+    <div class="modal modal__login fade" id="loginForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخــول</h5>
+                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="form__login">
+                        <div class="form-group mb-4">
+                            <label for="email" class="mb-3">البريد الالكترونى <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="password" class="mb-3"> كلمة المرور <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form__login--bottom mb-4 d-flex justify-content-between align-items-center">
+                            <button class="btn btn__modal--submit">دخــول</button>
+                            <a href="#">نسيت كلمة المــرور</a>
+                        </div>
+                        <div class="form__login--footer text-center">
+                            <a href="index.html">الاستمرار كزائر</a>
+                            <span>و</span>
+                            <a href="register.html">انشاء حساب جديد</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-align-justify"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="category.html">عطورات عربية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">عطورات فرنسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">خدمة التيستر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">الماركات</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled social__icons d-flex mr-auto">
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="mx-4"><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-snapchat-ghost"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="order-history">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="mb-4">- طلباتى (2)</h4>
+                    <div class="table__responsive">
+                        <table class="table" data-aos="fade-up" data-aos-offset="200">
+                            <thead>
+                                <tr>
+                                    <th scope="col">صورة المنتج</th>
+                                    <th scope="col">اسم المنتج</th>
+                                    <th scope="col">سعر المنتج</th>
+                                    <th scope="col">حالة الطلب</th>
+                                    <th scope="col">نوع المنتج</th>
+                                    <th scope="col">تاريخ الطلب</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><img src="img/p-2.png" class="d-block text-center" alt=""
+                                            width="50px"></th>
+                                    <td>عطر رجالى</td>
+                                    <td>20.00KD</td>
+                                    <td>تم الاستلام</td>
+                                    <td>الكترونيات</td>
+                                    <td>21/4/2020</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><img src="img/p-2.png" class="d-block text-center" alt=""
+                                            width="50px"></th>
+                                    <td>عطر رجالى</td>
+                                    <td>20.00KD</td>
+                                    <td>تم الاستلام</td>
+                                    <td>الكترونيات</td>
+                                    <td>21/4/2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 m-auto">
+                    <div class="footer__inner">
+                        <h4 class="footer__heading mb-4">خدماتنا</h4>
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">التبديل والاسترجاع</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">خدمة التوصيل</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">الشروط والأحكام</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">نبذة عنا</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">عنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 m-auto">
+                    <div class="footer__inner">
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">الاسئلة الشائعة</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">مساعدة</a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="dot"></div>
+                                <a href="">الاتصال بنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 m-auto">
+                    <div class="footer__inner">
+                        <h4 class="footer__heading mb-4">تابعنا على</h4>
+                        <ul class="list-unstyled social__icons d-flex mr-auto">
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li class="mx-4"><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-snapchat-ghost"></i></a></li>
+                        </ul>
+                        <h4 class="footer__heading mb-4">سارع وحمل تطبيق</h4>
+                        <div class="footer__apps">
+                            <img src="img/apps.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <p>عطوراتى جميع الحقوق محفوظة</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================== *INCLUDE JAVASCRIPT FILES*. =================== -->
+
+    <!-- ***** INCLUDE JQUERY LIBRARY ***** -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- ***** INCLUDE POPPER FOR DYNAMICALLY POSITIONS IN BOOTSTRAP ***** -->
+    <script src="js/popper.min.js"></script>
+    <!-- ***** INCLUDE BOOTSTRAP FRAMEWORK ***** -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/easyzoom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+    <!-- **** INCLUDE MAIN FILE.JS ***** -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

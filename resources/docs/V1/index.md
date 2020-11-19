@@ -1,0 +1,2 @@
+- ## Get Started
+    - [Configuration](/{{route}}/{{version}}/overview)

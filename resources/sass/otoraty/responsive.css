@@ -1,0 +1,41 @@
+@media only screen and (max-width: 780px) {
+    .top-header__inner ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top-header__inner ul li {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .header__centered--wrapper {
+        flex-direction: column;
+    }
+    .form__search {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .carousel,
+    .carousel-inner {
+        height: auto;
+    }
+    section {
+        padding: 3rem 1rem;
+    }
+    .notice {
+        padding: 1rem;
+        text-align: center;
+    }
+    .brands .row {
+        flex-direction: column;
+    }
+    .brands__box {
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .cart__inner {
+        flex-direction: column;
+    }
+    .section__top-header p {
+        font-size: 1rem;
+    }
+}

